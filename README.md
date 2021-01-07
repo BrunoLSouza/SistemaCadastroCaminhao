@@ -37,18 +37,6 @@ Atendendo a todos os requisitos, não é necessário efetuar mais nenhuma ação
 
 
 
-**Telas**
-
-![](C:\Users\bruno\Pictures\SistemaCaminhao_1.PNG)
-
-![](C:\Users\bruno\Pictures\SistemaCaminhao_2.PNG)
-
-![](C:\Users\bruno\Pictures\SistemaCaminhao_3.PNG)
-
-![SistemaCaminhao_4](C:\Users\bruno\Pictures\SistemaCaminhao_4.PNG)
-
-![SistemaCaminhao_5](C:\Users\bruno\Pictures\SistemaCaminhao_5.PNG)
-
 **Melhorias** **Futuras**
 
 Melhorar a implementação e cobertura de testes
