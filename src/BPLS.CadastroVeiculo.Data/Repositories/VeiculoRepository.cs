@@ -16,5 +16,10 @@ namespace BPLS.CadastroVeiculo.Data.Repositories
             return Db.Veiculos.Include(p => p.Modelo).ToList();
         }
 
+        public Veiculo ObterPorIdNoTrack(long id)
+        {
+            return Db.Veiculos.AsNoTracking().Include(p => p.Modelo).Where(p => p.IdVeiculo == id).FirstOrDefault();
+        }
+
     }
 }

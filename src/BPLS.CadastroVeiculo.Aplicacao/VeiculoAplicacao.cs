@@ -37,5 +37,40 @@ namespace BPLS.CadastroVeiculo.Aplicacao
             return veiculoVM;
         }
 
+        public VeiculoViewModel ObterPorId(long id)
+        {
+            var veiculo = _veiculoRepository.ObterPorId(id);
+            var data = JsonConvert.SerializeObject(veiculo);
+            var veiculosVM = JsonConvert.DeserializeObject<VeiculoViewModel>(data);
+
+            return veiculosVM;
+        }
+
+        public VeiculoViewModel ObterPorIdNoTrack(long id)
+        {
+            var veiculo = _veiculoRepository.ObterPorIdNoTrack(id);
+            var data = JsonConvert.SerializeObject(veiculo);
+            var veiculosVM = JsonConvert.DeserializeObject<VeiculoViewModel>(data);
+
+            return veiculosVM;
+        }
+
+        public VeiculoViewModel Atualizar(VeiculoViewModel veiculoVM)
+        {
+            var data = JsonConvert.SerializeObject(veiculoVM);
+            var veiculo = JsonConvert.DeserializeObject<Veiculo>(data);
+            veiculo = _veiculoRepository.Atualizar(veiculo);
+
+            var dataRetorno = JsonConvert.SerializeObject(veiculo);
+            veiculoVM = JsonConvert.DeserializeObject<VeiculoViewModel>(dataRetorno);
+
+            return veiculoVM;
+        }
+
+        public void Remover(long id)
+        {
+            _veiculoRepository.Excluir(id);
+        }
+
     }
 }

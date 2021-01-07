@@ -35,7 +35,7 @@ namespace BPLS.CadastroVeiculo.Data.Repositories
         {
             return DbSet.Find(id);
         }
-
+        
         public virtual IEnumerable<TEntity> ObterTodos()
         {
             return DbSet.ToList(); 

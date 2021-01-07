@@ -4,10 +4,10 @@
     ViewData["Title"] = "Lista Veiculos";
 }
 
-<h1>Lista Veiculos</h1>
+<h1>Lista de Caminhões</h1>
 
-<p>
-    <a asp-action="Novo">Novo Veiculo</a>
+<p class="float-right">
+    <a asp-action="Novo" class="btn btn-success">Novo Caminhão</a>
 </p>
 <table class="table">
     <thead>
@@ -43,8 +43,8 @@
                 @Html.DisplayFor(modelItem => item.AnoModelo)
             </td>
             <td>
-                @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Deletar", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Editar", "Editar", new { id=item.IdVeiculo }) |
+                @Html.ActionLink("Deletar", "Deletar", new { id=item.IdVeiculo })
             </td>
         </tr>
 }
