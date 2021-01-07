@@ -26,6 +26,7 @@ namespace BPLS.CadastroVeiculo.Data.Repositories
             var entry = Db.Entry(obj);
             DbSet.Attach(obj);
             entry.State = EntityState.Added;
+            SaveChanges();
 
             return obj;
         }
@@ -45,6 +46,7 @@ namespace BPLS.CadastroVeiculo.Data.Repositories
             var entry = Db.Entry(obj);
             DbSet.Attach(obj);
             entry.State = EntityState.Modified;
+            SaveChanges();
 
             return obj;
         }
@@ -52,6 +54,7 @@ namespace BPLS.CadastroVeiculo.Data.Repositories
         public virtual void Excluir(long id)
         {
             DbSet.Remove(DbSet.Find(id));
+            SaveChanges();
         }
 
         public IEnumerable<TEntity> Buscar(Expression<Func<TEntity, bool>> predicate)

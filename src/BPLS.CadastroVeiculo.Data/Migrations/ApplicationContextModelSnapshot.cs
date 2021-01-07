@@ -96,7 +96,7 @@ namespace BPLS.CadastroVeiculo.Data.Migrations
                         {
                             IdVeiculo = 1L,
                             AnoFabricacao = 2021,
-                            AnoModelo = 2020,
+                            AnoModelo = 2021,
                             IdModelo = 1L
                         });
                 });

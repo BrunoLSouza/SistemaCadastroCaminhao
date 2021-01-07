@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BPLS.CadastroVeiculo.Data.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20210107130326_SeedInicial")]
+    [Migration("20210107133615_SeedInicial")]
     partial class SeedInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -98,7 +98,7 @@ namespace BPLS.CadastroVeiculo.Data.Migrations
                         {
                             IdVeiculo = 1L,
                             AnoFabricacao = 2021,
-                            AnoModelo = 2020,
+                            AnoModelo = 2021,
                             IdModelo = 1L
                         });
                 });

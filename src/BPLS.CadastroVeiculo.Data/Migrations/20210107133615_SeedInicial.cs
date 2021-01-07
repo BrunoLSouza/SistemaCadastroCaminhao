@@ -36,7 +36,7 @@ namespace BPLS.CadastroVeiculo.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Veiculos",
                 columns: new[] { "IdVeiculo", "AnoFabricacao", "AnoModelo", "IdModelo" },
-                values: new object[] { 1L, 2021, 2020, 1L });
+                values: new object[] { 1L, 2021, 2021, 1L });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

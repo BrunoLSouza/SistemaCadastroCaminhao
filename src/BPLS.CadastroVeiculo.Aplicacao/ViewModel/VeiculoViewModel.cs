@@ -13,13 +13,16 @@ namespace BPLS.CadastroVeiculo.Aplicacao.ViewModel
         public long IdVeiculo { get; set; }
 
         [DisplayName("Modelo")]
+        [Required(ErrorMessage = "Preencha o campo Modelo")]
         public long IdModelo { get; set; }
         public ModeloViewModel Modelo { get; set; }
 
         [DisplayName("Ano Fabricação")]
+        [Required(ErrorMessage = "Preencha o campo Ano Fabricação")]
         public int AnoFabricacao { get; set; }
 
         [DisplayName("Ano Modelo")]
+        [Required(ErrorMessage = "Preencha o campo Ano Modelo")]
         public int AnoModelo { get; set; }
 
         //[DisplayName("Tipo Veiculo")]

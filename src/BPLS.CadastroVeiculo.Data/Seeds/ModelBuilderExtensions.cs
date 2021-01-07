@@ -13,7 +13,7 @@ namespace BPLS.CadastroVeiculo.Data.Seeds
         {           
             modelBuilder.Entity<Modelo>().HasData(
                 new Modelo { IdModelo = 1, Descricao = "FH"},
-                new Modelo { IdModelo = 2,Descricao = "FM" }
+                new Modelo { IdModelo = 2, Descricao = "FM" }
             );
 
             modelBuilder.Entity<TipoVeiculo>().HasData(
@@ -21,7 +21,7 @@ namespace BPLS.CadastroVeiculo.Data.Seeds
            );
 
             modelBuilder.Entity<Veiculo>().HasData(
-               new Veiculo { IdVeiculo = 1, AnoFabricacao = 2021, AnoModelo = 2020, IdModelo = 1 }
+               new Veiculo { IdVeiculo = 1, AnoFabricacao = 2021, AnoModelo = 2021, IdModelo = 1 }
            );
 
         }
