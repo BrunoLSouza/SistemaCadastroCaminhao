@@ -3,14 +3,16 @@ using BPLS.CadastroVeiculo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BPLS.CadastroVeiculo.Data.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20210107014935_SeedInitial")]
+    partial class SeedInitial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,16 +97,6 @@ namespace BPLS.CadastroVeiculo.Data.Migrations
                     b.HasIndex("IdTipoVeiculo");
 
                     b.ToTable("Veiculos");
-
-                    b.HasData(
-                        new
-                        {
-                            IdVeiculo = 1L,
-                            AnoFabricacao = 2021,
-                            AnoModelo = 2020,
-                            IdModelo = 1L,
-                            IdTipoVeiculo = 1L
-                        });
                 });
 
             modelBuilder.Entity("BPLS.CadastroVeiculo.Dominio.Entities.Veiculo", b =>

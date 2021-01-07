@@ -7,7 +7,7 @@ namespace BPLS.CadastroVeiculo.Dominio.Interfaces
 {
     public interface IVeiculoRepository
     {
-        //ICollection<Veiculo> ListarTodos();
+        ICollection<Veiculo> ObterTodos();
         //Veiculo Salvar(Veiculo veiculo);
         //void Excluir(long IdVeiculo);
         //Veiculo Atualizar(Veiculo vculo);

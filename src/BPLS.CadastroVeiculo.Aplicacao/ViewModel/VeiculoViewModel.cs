@@ -23,5 +23,9 @@ namespace BPLS.CadastroVeiculo.Aplicacao.ViewModel
 
         [DisplayName("Tipo Veiculo")]
         public long IdTipoVeiculo { get; set; }
+
+        public TipoVeiculoViewModel TipoVeiculo { get; set; }
+
+        public ModeloViewModel Modelo { get; set; }
     }
 }

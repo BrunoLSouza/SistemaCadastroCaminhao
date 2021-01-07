@@ -1,5 +1,6 @@
 ﻿using BPLS.CadastroVeiculo.Dominio.Entities;
 using BPLS.CadastroVeiculo.Dominio.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,31 +10,10 @@ namespace BPLS.CadastroVeiculo.Data.Repositories
 {
     public class VeiculoRepository : BaseRepository<Veiculo>, IVeiculoRepository
     {
-        
+        public ICollection<Veiculo> ObterTodos()
+        {
+            return Db.Veiculos.Include(p => p.Modelo).Include(p => p.TipoVeiculo).ToList();
+        }
 
-        //public Veiculo Atualizar(Veiculo veiculo)
-        //{
-        //    return Atualizar(veiculo);
-        //}
-
-        //public void Excluir(long IdVeiculo)
-        //{
-        //    Excluir(IdVeiculo);
-        //}
-
-        //public ICollection<Veiculo> ListarTodos()
-        //{
-        //    return ObterTodos().ToList();
-        //}
-
-        //public Veiculo ObterPorId(long IdVeiculo)
-        //{
-        //    return ObterPorId(IdVeiculo);
-        //}
-
-        //public Veiculo Salvar(Veiculo veiculo)
-        //{
-        //    return Adicionar(veiculo);
-        //}
     }
 }

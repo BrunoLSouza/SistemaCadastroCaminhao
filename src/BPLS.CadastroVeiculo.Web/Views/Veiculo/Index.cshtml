@@ -37,7 +37,7 @@
                 @Html.DisplayFor(modelItem => item.IdVeiculo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdModelo)
+                @Html.DisplayFor(modelItem => item.Modelo.Descricao)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.AnoFabricacao)
@@ -46,12 +46,11 @@
                 @Html.DisplayFor(modelItem => item.AnoModelo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdTipoVeiculo)
+                @Html.DisplayFor(modelItem => item.TipoVeiculo.Descricao)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Deletar", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
 }

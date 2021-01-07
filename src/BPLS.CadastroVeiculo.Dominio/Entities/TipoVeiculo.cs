@@ -10,7 +10,7 @@ namespace BPLS.CadastroVeiculo.Dominio.Entities
         public long IdTipoVeiculo { get; set; }
         public string Descricao { get; set; }
 
-        public virtual ICollection<Veiculo> Veiculos { get; set; }
+        //public virtual ICollection<Veiculo> Veiculos { get; set; }
 
     }
 }

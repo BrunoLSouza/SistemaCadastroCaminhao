@@ -1,4 +1,5 @@
-﻿using BPLS.CadastroVeiculo.Dominio;
+﻿using BPLS.CadastroVeiculo.Data.Seeds;
+using BPLS.CadastroVeiculo.Dominio;
 using BPLS.CadastroVeiculo.Dominio.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -22,6 +23,9 @@ namespace BPLS.CadastroVeiculo.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationContext).Assembly);
+
+            modelBuilder.Seed();
+
             base.OnModelCreating(modelBuilder);
         }
 
