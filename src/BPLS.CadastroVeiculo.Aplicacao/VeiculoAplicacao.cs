@@ -1,4 +1,5 @@
-﻿using BPLS.CadastroVeiculo.Aplicacao.ViewModel;
+﻿
+using BPLS.CadastroVeiculo.Aplicacao.ViewModel;
 using BPLS.CadastroVeiculo.Data.Repositories;
 using BPLS.CadastroVeiculo.Dominio.Entities;
 using Newtonsoft.Json;
@@ -8,7 +9,7 @@ using System.Collections.Generic;
 namespace BPLS.CadastroVeiculo.Aplicacao
 {
     public class VeiculoAplicacao
-    {
+    { 
         private readonly VeiculoRepository _veiculoRepository;
 
         public VeiculoAplicacao()

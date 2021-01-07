@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BPLS.CadastroVeiculo.Web", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BPLS.CadastroVeiculo.Data", "src\BPLS.CadastroVeiculo.Data\BPLS.CadastroVeiculo.Data.csproj", "{070959B2-F5CF-4372-BFF0-76598B0FB8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPLS.CadastroVeiculo.Dominio", "src\BPLS.CadastroVeiculo.Dominio\BPLS.CadastroVeiculo.Dominio.csproj", "{358DDE53-134B-47CC-90B5-8455D530352D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BPLS.CadastroVeiculo.Dominio", "src\BPLS.CadastroVeiculo.Dominio\BPLS.CadastroVeiculo.Dominio.csproj", "{358DDE53-134B-47CC-90B5-8455D530352D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPLS.CadastroVeiculo.Aplicacao", "src\BPLS.CadastroVeiculo.Aplicacao\BPLS.CadastroVeiculo.Aplicacao.csproj", "{F68A8D94-8F2E-4B82-9954-2F5D4AB3AE94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BPLS.CadastroVeiculo.Aplicacao", "src\BPLS.CadastroVeiculo.Aplicacao\BPLS.CadastroVeiculo.Aplicacao.csproj", "{F68A8D94-8F2E-4B82-9954-2F5D4AB3AE94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste", "Teste", "{CED15F3A-9CD0-416E-B41A-CF31760FDEB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPLS.CadastroVeiculo.Test", "test\BPLS.CadastroVeiculo.Test\BPLS.CadastroVeiculo.Test.csproj", "{BF9E14A8-DAE3-4686-8F62-9E81848C70AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{F68A8D94-8F2E-4B82-9954-2F5D4AB3AE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F68A8D94-8F2E-4B82-9954-2F5D4AB3AE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F68A8D94-8F2E-4B82-9954-2F5D4AB3AE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9E14A8-DAE3-4686-8F62-9E81848C70AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9E14A8-DAE3-4686-8F62-9E81848C70AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9E14A8-DAE3-4686-8F62-9E81848C70AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9E14A8-DAE3-4686-8F62-9E81848C70AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{070959B2-F5CF-4372-BFF0-76598B0FB8EA} = {EA633E3C-FEC4-4D97-BD3D-112AE8F50DED}
 		{358DDE53-134B-47CC-90B5-8455D530352D} = {C98E2E29-2FFE-42F8-B0C1-B76D25D717E7}
 		{F68A8D94-8F2E-4B82-9954-2F5D4AB3AE94} = {6B0F4490-D8FA-4281-A179-0E3ABC5FFE7E}
+		{BF9E14A8-DAE3-4686-8F62-9E81848C70AE} = {CED15F3A-9CD0-416E-B41A-CF31760FDEB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5375DC2-CF81-4B87-B955-47606F68E3AD}
