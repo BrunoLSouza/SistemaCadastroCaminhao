@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BPLS.CadastroVeiculo.Data\BPLS.CadastroVeiculo.Data.csproj" />
+    <ProjectReference Include="..\BPLS.CadastroVeiculo.Dominio\BPLS.CadastroVeiculo.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>
