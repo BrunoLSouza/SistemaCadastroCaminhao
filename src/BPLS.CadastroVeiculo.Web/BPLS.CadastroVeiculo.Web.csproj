@@ -21,4 +21,8 @@
     <ProjectReference Include="..\BPLS.CadastroVeiculo.Aplicacao\BPLS.CadastroVeiculo.Aplicacao.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Context\" />
+  </ItemGroup>
+
 </Project>

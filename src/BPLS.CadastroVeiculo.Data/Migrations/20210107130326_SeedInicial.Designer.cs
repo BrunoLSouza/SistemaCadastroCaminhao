@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BPLS.CadastroVeiculo.Data.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20210107014935_SeedInitial")]
-    partial class SeedInitial
+    [Migration("20210107130326_SeedInicial")]
+    partial class SeedInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -87,45 +87,31 @@ namespace BPLS.CadastroVeiculo.Data.Migrations
                     b.Property<long>("IdModelo")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("IdTipoVeiculo")
-                        .HasColumnType("bigint");
-
                     b.HasKey("IdVeiculo");
 
                     b.HasIndex("IdModelo");
 
-                    b.HasIndex("IdTipoVeiculo");
-
                     b.ToTable("Veiculos");
+
+                    b.HasData(
+                        new
+                        {
+                            IdVeiculo = 1L,
+                            AnoFabricacao = 2021,
+                            AnoModelo = 2020,
+                            IdModelo = 1L
+                        });
                 });
 
             modelBuilder.Entity("BPLS.CadastroVeiculo.Dominio.Entities.Veiculo", b =>
                 {
                     b.HasOne("BPLS.CadastroVeiculo.Dominio.Entities.Modelo", "Modelo")
-                        .WithMany("Veiculos")
+                        .WithMany()
                         .HasForeignKey("IdModelo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BPLS.CadastroVeiculo.Dominio.Entities.TipoVeiculo", "TipoVeiculo")
-                        .WithMany("Veiculos")
-                        .HasForeignKey("IdTipoVeiculo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Modelo");
-
-                    b.Navigation("TipoVeiculo");
-                });
-
-            modelBuilder.Entity("BPLS.CadastroVeiculo.Dominio.Entities.Modelo", b =>
-                {
-                    b.Navigation("Veiculos");
-                });
-
-            modelBuilder.Entity("BPLS.CadastroVeiculo.Dominio.Entities.TipoVeiculo", b =>
-                {
-                    b.Navigation("Veiculos");
                 });
 #pragma warning restore 612, 618
         }
