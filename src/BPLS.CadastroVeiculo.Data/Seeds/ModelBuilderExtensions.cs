@@ -21,7 +21,8 @@ namespace BPLS.CadastroVeiculo.Data.Seeds
            );
 
             modelBuilder.Entity<Veiculo>().HasData(
-               new Veiculo { IdVeiculo = 1, AnoFabricacao = 2021, AnoModelo = 2020, IdModelo = 1, IdTipoVeiculo = 1 }
+               //new Veiculo { IdVeiculo = 1, AnoFabricacao = 2021, AnoModelo = 2020, IdModelo = 1, IdTipoVeiculo = 1 }
+               new Veiculo { IdVeiculo = 1, AnoFabricacao = 2021, AnoModelo = 2020, IdModelo = 1 }
            );
 
         }

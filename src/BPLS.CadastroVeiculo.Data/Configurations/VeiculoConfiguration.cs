@@ -18,7 +18,7 @@ namespace BPLS.CadastroVeiculo.Data.Configurations
             builder.Property(p => p.AnoModelo).HasColumnType("INT").IsRequired();
 
             builder.HasOne(p => p.Modelo).WithMany().HasForeignKey(p => p.IdModelo);
-            builder.HasOne(p => p.TipoVeiculo).WithMany().HasForeignKey(p => p.IdTipoVeiculo);
+            //builder.HasOne(p => p.TipoVeiculo).WithMany().HasForeignKey(p => p.IdTipoVeiculo);
         }
     }
 }

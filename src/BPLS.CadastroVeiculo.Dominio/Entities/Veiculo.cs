@@ -13,7 +13,7 @@ namespace BPLS.CadastroVeiculo.Dominio.Entities
         public int AnoFabricacao { get; set; }        
         public int AnoModelo { get; set; }
 
-        public long IdTipoVeiculo { get; set; }
-        public virtual TipoVeiculo TipoVeiculo { get; set; }
+        //public long IdTipoVeiculo { get; set; }
+        //public virtual TipoVeiculo TipoVeiculo { get; set; }
     }
 }

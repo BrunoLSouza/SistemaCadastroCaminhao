@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BPLS.CadastroVeiculo.Data
+namespace BPLS.CadastroVeiculo.Web.Context
 {
     public class ApplicationContext : DbContext
     {

@@ -12,7 +12,8 @@ namespace BPLS.CadastroVeiculo.Data.Repositories
     {
         public ICollection<Veiculo> ObterTodos()
         {
-            return Db.Veiculos.Include(p => p.Modelo).Include(p => p.TipoVeiculo).ToList();
+            //return Db.Veiculos.Include(p => p.Modelo).Include(p => p.TipoVeiculo).ToList();
+            return Db.Veiculos.Include(p => p.Modelo).ToList();
         }
 
     }

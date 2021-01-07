@@ -14,6 +14,7 @@ namespace BPLS.CadastroVeiculo.Aplicacao.ViewModel
 
         [DisplayName("Modelo")]
         public long IdModelo { get; set; }
+        public ModeloViewModel Modelo { get; set; }
 
         [DisplayName("Ano Fabricação")]
         public int AnoFabricacao { get; set; }
@@ -21,11 +22,10 @@ namespace BPLS.CadastroVeiculo.Aplicacao.ViewModel
         [DisplayName("Ano Modelo")]
         public int AnoModelo { get; set; }
 
-        [DisplayName("Tipo Veiculo")]
-        public long IdTipoVeiculo { get; set; }
+        //[DisplayName("Tipo Veiculo")]
+        // public long IdTipoVeiculo { get; set; }
 
-        public TipoVeiculoViewModel TipoVeiculo { get; set; }
+        //public TipoVeiculoViewModel TipoVeiculo { get; set; }
 
-        public ModeloViewModel Modelo { get; set; }
     }
 }
